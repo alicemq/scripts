@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FMCSA File print name change
-// @namespace    http://tampermonkey.net/
+// @namespace    fmcsa_file_print_change
 // @version      0.1
 // @description  File print cleanup
 // @author       alicemq
