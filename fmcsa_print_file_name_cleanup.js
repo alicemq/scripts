@@ -329,16 +329,6 @@ if (settings_btn) {
 }
 //CONFIG_END
 
-//var minusdays = GM_config.get('minusday');
-console.log(GM_config.get('comp_names'));
-
-console.log(moment().tz(GM_config.get('timezone')).subtract(GM_config.get('minusday'), 'days').format(GM_config.get('dateformat')));
-
-
-
-
-//CIA NUSISTATO KIEK DIENU minus - rasyti teigiama skaiciu
-
 var company;
 var comp_search = "Employer Conducting Query: ";
 var bTags = document.getElementsByTagName("h5");
@@ -366,11 +356,11 @@ for (var h = 0; h < bTags.length; h++) {
 const comp_replace = GM_config.get('comp_names').split(/\r?\n/);
 
 var comp_dict = []
+var name = ""
 comp_replace.forEach((item) => {
-  var name = item.split(':')
+   name = item.split(':')
   comp_dict[name[0]] = name[1];
 });
-company = 'USA CARGO INC  (USDOT'; //testing
 
 if ( company.includes(trim_end_DOT)) {
 company = company.substring( 0, company.indexOf( " (USDOT" ) ).trim();
@@ -378,15 +368,10 @@ company = company.substring( 0, company.indexOf( " (USDOT" ) ).trim();
 else {
 console.log(company)
 }
+
 if (company in comp_dict) {
     company = comp_dict[company]
 }
-//testing
-console.log(company)
-//console.log(comp_dict);
-//console.log(company in comp_dict);
-//console.log(comp_dict[company]);
-//if (comp_dict.includes
 
 function pavadinimas() {
     'use strict';
@@ -395,3 +380,4 @@ initialWindowTitle = window.document.title;
 };
 console.log(pavadinimas());
 pavadinimas();
+
