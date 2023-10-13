@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FMCSA File print name change
 // @namespace    fmcsa_file_print_change
-// @version      0.2
+// @version      0.1
 // @description  File print cleanup
 // @author       alicemq
 // @match        https://clearinghouse.fmcsa.dot.gov/*
