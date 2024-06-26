@@ -19,10 +19,10 @@
 // @grant GM_addStyle
 // @grant GM_addElement
 // @grant         GM_log
-// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/GM_config-master/gm_config.js
-// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/moment.js
-// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/moment-timezone.js
-// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/moment-timezone-with-data.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/GM_config-master/gm_config.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/moment.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/moment-timezone.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/moment-timezone-with-data.js
 // @include       https://openuserjs.org/scripts/sizzle/The_GM_config_Unit_Test
 // ==/UserScript==
 /*- The @grant directive is needed to work around a design change
