@@ -19,10 +19,10 @@
 // @grant GM_addStyle
 // @grant GM_addElement
 // @grant         GM_log
-// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/GM_config-master/gm_config.js
-// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/moment.js
-// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/moment-timezone.js
-// @require       https://raw.githubusercontent.com/alicemq/scripts/master/main/libs/moment-timezone-with-data.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/GM_config-master/gm_config.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/moment.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/moment-timezone.js
+// @require       https://raw.githubusercontent.com/alicemq/scripts/main/libs/moment-timezone-with-data.js
 // @include       https://openuserjs.org/scripts/sizzle/The_GM_config_Unit_Test
 // ==/UserScript==
 /*- The @grant directive is needed to work around a design change
@@ -106,7 +106,7 @@ function buttons() {
     {
       'label': 'Comp replace ex. "COMP USA INC:COMP USA"',
       'type': 'textarea',
-      'default': 'BRAVO COMP:BRAVO'
+      'default': ''
     },
     'file_name_date': {
       'label': 'File name date',
@@ -322,7 +322,7 @@ function buttons() {
       }
     });
   //define where button will appear
-  const where = document.querySelector("body > footer > div > div.row.footer-links > div:nth-child(1) > ul")
+  const where = document.querySelector("body > footer > div > div.row.footer-links > div:nth-child(1) > span > ul")
   const node = document.createElement("li");
   const anchor = document.createElement('a');
   anchor.setAttribute('id', 'settings');
